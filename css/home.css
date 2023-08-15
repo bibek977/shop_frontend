@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Roboto', sans-serif;
+    /* border: 2px solid red; */
 }
 
 input[type='search']{
@@ -18,4 +19,75 @@ input[type='search']{
 .main-nav ul li a{
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.topic{
+    background-color: rgba(185, 194, 217, 0.30);
+}
+
+.bg-img{
+    background-image: url("../images/image\ 7\ \(1\).png");
+    min-height: 65vh;
+    /* height: 35vmax; */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bg_text{
+    background-color: rgba(120, 120, 120, 0.95);
+    height:50vh;
+    width: 25vw;
+    color: #D9C9B9;
+    font-size: 1.4rem;
+}
+.bg_text div h1{
+    font-size: 3rem;
+}
+.bg_text div h2{
+    font-size: 1.4rem;
+}
+
+.simple_btn{
+    background-color: #B9C2D9;
+}
+
+.card-carousel button{
+    background-color: #B9C2D9;
+}
+
+.card-title{
+    color: #7D7D7D;
+}
+
+.card-body, .card-subtitle{
+    color: #202020;
+    font-weight: bold;
+}
+
+.card-carousel{
+    background-color: #F3F3F3;
+}
+
+.description_section{
+    background-color: #D9C9B9;
+}
+.new_section{
+    background-color: rgba(185, 194, 217, 0.30);
+}
+@media screen and (max-width:1400px){
+    
+    .bg_text{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:992px){
+    /* .bg-img{
+        background-image: none;
+    } */
+    .bg_text{
+        width: 50%;
+    }
 }

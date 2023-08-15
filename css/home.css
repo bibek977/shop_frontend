@@ -27,8 +27,8 @@ input[type='search']{
 
 .bg-img{
     background-image: url("../images/image\ 7\ \(1\).png");
-    min-height: 65vh;
-    /* height: 35vmax; */
+    /* min-height: 65vh; */
+    height: 35vmax;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,8 +37,9 @@ input[type='search']{
 
 .bg_text{
     background-color: rgba(120, 120, 120, 0.95);
-    height:50vh;
-    width: 25vw;
+    /* height:50vh;
+    width: 25vw; */
+    width: 40vmax;
     color: #D9C9B9;
     font-size: 1.4rem;
 }
@@ -76,6 +77,23 @@ input[type='search']{
 .new_section{
     background-color: rgba(185, 194, 217, 0.30);
 }
+
+.chess .card {
+    background-color: #EAEAEA;
+}
+
+.top-footer{
+    background-color: rgba(185, 194, 217, 0.30);
+}
+
+.center-footer{
+    background-color: #D9C9B9;
+}
+
+.last_btn{
+    background-color: #B9C2D9;
+}
+
 @media screen and (max-width:1400px){
     
     .bg_text{

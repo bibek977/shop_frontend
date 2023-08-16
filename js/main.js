@@ -1,32 +1,26 @@
-$(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        dots:false,
-        nav: true,
-        navText: ['<i class="btn border border-2 border-secondary rounded-5  fs-4 ">&larr;</i>', '<i class="btn border border-2 border-secondary fs-4 rounded-5 ">&rarr;</i>'],
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1.5
-            },
-            800:{
-                items : 2
-            },
-            1000: {
-                items: 2.5
-            },
-            1200:{
-                items:3.5
-            },
-            1400: {
-                items: 4.5
-            }
+
+
+const nextIcon = '<i class="btn border border-2 border-secondary rounded-5  fs-4 "><i class="fa-solid fa-arrow-left"></i></i>';
+const prevIcon = '<i class="btn border border-2 border-secondary fs-4 rounded-5 "><i class="fa-solid fa-arrow-right"></i></i>'
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    navText: [nextIcon, prevIcon],
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        },
+        1400: {
+            items: 3.5
         }
-    })
+    }
 })

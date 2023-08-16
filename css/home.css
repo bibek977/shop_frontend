@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 *{
     font-family: 'Roboto', sans-serif;
     /* border: 2px solid red; */
@@ -25,35 +25,48 @@ input[type='search']{
     background-color: rgba(185, 194, 217, 0.30);
 }
 
+.topic .text-span{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
 .bg-img{
     background-image: url("../images/image\ 7\ \(1\).png");
-    /* min-height: 65vh; */
-    height: 35vmax;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .bg_text{
     background-color: rgba(120, 120, 120, 0.95);
-    /* height:50vh;
-    width: 25vw; */
-    width: 40vmax;
+    width: 20vmax;
+    height: 100%;
     color: #D9C9B9;
-    font-size: 1.4rem;
+
 }
+
 .bg_text div h1{
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
 }
+
 .bg_text div h2{
-    font-size: 1.4rem;
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.bg_text div h3{
+    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+
 }
 
 .simple_btn{
     background-color: #B9C2D9;
 }
-
+.new_font{
+        font-family: 'Bebas Neue', sans-serif;
+}
 .card-carousel button{
     background-color: #B9C2D9;
 }
@@ -94,6 +107,25 @@ input[type='search']{
     background-color: #B9C2D9;
 }
 
+.footer input[type="text"], .footer input[type="email"]{
+    background-color: rgba(32, 32, 32, 0.50);
+}
+
+.owl-nav{
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+}
+.owl-nav .owl-prev{
+    opacity: .5;
+}
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover{
+    background: none !important;
+    outline: none !important;
+    opacity: 1 !important;
+}
+
+
 @media screen and (max-width:1400px){
     
     .bg_text{
@@ -102,10 +134,15 @@ input[type='search']{
 }
 
 @media screen and (max-width:992px){
-    /* .bg-img{
-        background-image: none;
-    } */
+
     .bg_text{
         width: 50%;
+    }
+}
+
+@media screen and (max-width:576px){
+
+    .bg_text{
+        width: 70%;
     }
 }
